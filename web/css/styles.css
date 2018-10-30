@@ -1,0 +1,113 @@
+@charset "UTF-8";
+.miner-form .grunt-elements > div, .miner-form .pools-list .pool-el > div {
+  position: relative; }
+  .miner-form .grunt-elements > div .help-block, .miner-form .pools-list .pool-el > div .help-block {
+    position: absolute;
+    display: none; }
+  .miner-form .grunt-elements > div:hover .help-block, .miner-form .pools-list .pool-el > div:hover .help-block {
+    display: block;
+    padding: 0.2em;
+    background: white;
+    z-index: 5; }
+
+.miner-form .grunt-elements {
+  margin: 0 -0.25em; }
+  .miner-form .grunt-elements > div {
+    display: inline-block;
+    padding: 0 0.25em;
+    width: 19%;
+    box-sizing: border-box;
+    vertical-align: bottom; }
+  .miner-form .grunt-elements::after {
+    content: '';
+    clear: both;
+    display: block; }
+.miner-form .pools-list {
+  background-color: #dddddd;
+  margin: 0.5em -0.2em; }
+  .miner-form .pools-list .pool-el {
+    margin: 0 -0.25em;
+    padding: 0 0.2em; }
+    .miner-form .pools-list .pool-el > div {
+      padding: 0 0.25em;
+      width: 30%;
+      display: inline-block; }
+
+/* статистика майнера ...*/
+.minerhistory-list table {
+  width: 100%; }
+  .minerhistory-list table th {
+    text-align: center; }
+  .minerhistory-list table td {
+    padding: 0.1em 0.3em; }
+  .minerhistory-list table .al {
+    text-align: left; }
+  .minerhistory-list table .ac {
+    text-align: center; }
+  .minerhistory-list table .ar {
+    text-align: right; }
+
+/* таблица списка майнеров ..*/
+.miners-list, .miners-list-online {
+  width: 100%; }
+  .miners-list th, .miners-list-online th {
+    text-align: center; }
+
+.miners-list-online tr.miner-row, .miners-list-online th.sortable {
+  cursor: pointer; }
+.miners-list-online tr.bad-more {
+  background: red; }
+.miners-list-online tr.bad-one {
+  background: yellow; }
+
+.polsunok {
+  display: inline-block;
+  width: 30em;
+  position: relative;
+  padding: 1.5em 0;
+  margin: 0 1em; }
+  .polsunok .indicator {
+    text-align: center;
+    position: relative;
+    height: 1em; }
+    .polsunok .indicator .data {
+      position: absolute;
+      top: 150%;
+      width: 110%;
+      margin-left: -0.75em; }
+    .polsunok .indicator .title {
+      position: absolute;
+      bottom: 150%;
+      width: 110%;
+      margin-left: -0.75em; }
+    .polsunok .indicator span {
+      background: blue;
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      position: absolute;
+      bottom: -0.25em;
+      margin-left: -0.75em; }
+      .polsunok .indicator span.right-point {
+        background-color: red; }
+    .polsunok .indicator .polosa {
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      background: black;
+      width: 100%;
+      left: 0; }
+  .polsunok .min-val {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    margin-top: -0.7em; }
+  .polsunok .max-val {
+    position: absolute;
+    right: 0;
+    top: 25%;
+    margin-top: -0.7em; }
+
+/*# sourceMappingURL=styles.css.map */

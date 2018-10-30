@@ -1,0 +1,61 @@
+// форма добавления майнера .. 
+
+%fieldclasserror{
+	position:relative;
+	.help-block {position:absolute;display:none;}
+	&:hover .help-block {display:block;padding:0.2em;background:white;z-index:5;}
+}
+
+.miner-form {
+	.grunt-elements { margin:0 -0.25em;
+		& > div {@extend %fieldclasserror;display:inline-block;padding:0 0.25em;width:19%;box-sizing:border-box;vertical-align:bottom;	}
+		&::after {content:'';clear:both;display:block;}
+	}
+	.pools-list  {
+		background-color:#dddddd;margin:0.5em -0.2em;
+		.pool-el {
+			margin:0 -0.25em;padding:0 0.2em;	
+			& > div {padding: 0 0.25em;width:30%;display:inline-block;@extend %fieldclasserror;}
+		}
+
+
+	}
+}
+
+/* статистика майнера ...*/
+.minerhistory-list {
+	table {width:100%;
+		th {text-align:center;}
+		td {padding:0.1em 0.3em;}
+		.al {text-align:left;}
+		.ac {text-align:center;}
+		.ar {text-align:right;}
+	}
+}
+
+/* таблица списка майнеров ..*/
+.miners-list,.miners-list-online {
+	width:100%;
+	th {text-align:center;}
+}
+.miners-list-online {
+	tr.miner-row, th.sortable {cursor:pointer;}
+	tr.bad-more {background:red;}
+	tr.bad-one {background:yellow;}
+
+}
+
+
+.polsunok {display:inline-block;width:30em;position:relative;padding:1.5em 0;margin:0 1em;
+	.indicator {text-align:center;position:relative;height:1em;
+		.data {position:absolute;top:150%;width:110%;margin-left:-0.75em;}
+		.title {position:absolute;bottom:150%;width:110%;margin-left:-0.75em;}
+		span {background:blue;border-radius:50%;cursor:pointer;display:inline-block;width:1.5em;height:1.5em;position:absolute;bottom:-0.25em;margin-left:-0.75em;
+			&.right-point {background-color:red;}
+		}
+		.polosa {position:absolute;top:50%;height:1px;background:black;width:100%;left:0;}
+	}
+	.min-val {position:absolute;left:0;top:25%;margin-top:-0.7em;}
+	.max-val {position:absolute;right:0;top:25%;margin-top:-0.7em;}
+
+}
